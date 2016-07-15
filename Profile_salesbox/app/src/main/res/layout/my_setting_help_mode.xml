@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_help_mode"
+        android:text="Help Mode"
+        android:textStyle="bold"/>
+
+    <View
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@+id/text_help_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="#d3d6d6"
+        android:id="@+id/view_help_mode"
+        />
+
+    <TextView
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="40dp"
+        android:text="Turn Help On/Off:"
+        android:layout_below="@+id/view_help_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_turn_off"
+        />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/view_help_mode"
+        android:layout_toRightOf="@+id/text_turn_off"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/ll_box_layout"
+        android:background="@drawable/background"
+        android:layout_alignRight="@+id/view_language"
+        android:layout_alignEnd="@+id/view_language">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_english"
+            android:text="On"
+            />
+
+        <Spinner
+            android:layout_marginLeft="130dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

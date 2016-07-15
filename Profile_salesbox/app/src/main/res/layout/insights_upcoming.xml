@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_upcoming"
+        android:text="Upcoming"/>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="#d3d5d5"
+        android:layout_marginTop="2dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_things_to_do"
+        android:background="#d5d5d5"
+        android:layout_marginTop="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_things_todo"
+            android:text="Things to do!"/>
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_marginTop="150dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/btn_plus"
+        android:layout_gravity="center"/>
+
+</LinearLayout>

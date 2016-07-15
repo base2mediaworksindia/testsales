@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_alignParentBottom="true"
+    android:background="#d3d5d5">
+
+    <ImageView
+        android:id="@+id/image_run"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/disc_blue_question_mark"
+        android:baselineAlignBottom="true"/>
+
+
+
+    <ImageView
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/disc_green_question_mark"
+        android:baselineAlignBottom="true"/>
+
+    <ImageView
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/disc_yellow_question_mark"
+        android:baselineAlignBottom="true"/>
+
+    <ImageView
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/disc_red_question_mark"
+        android:baselineAlignBottom="true"/>
+
+</LinearLayout>

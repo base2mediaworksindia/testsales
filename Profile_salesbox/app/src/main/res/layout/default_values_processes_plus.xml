@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:background="#234354"
+        android:id="@+id/ll_action_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:layout_marginRight="60dp"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:id="@+id/btn_cancel"
+            android:text="Cancel"
+            android:textSize="15sp"
+            />
+
+        <TextView
+            android:layout_marginRight="75dp"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:text="Add Sales Processes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_add_processes"
+            />
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:textColor="#ffffff"
+            android:id="@+id/btn_save"
+            android:text="Save"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="Name:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_add_sales_name"
+        android:layout_below="@+id/ll_action_title"/>
+
+    <EditText
+        android:id="@+id/edit_add_sales_name"
+        android:layout_marginLeft="5dp"
+        android:textSize="10sp"
+        android:background="@android:color/transparent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="required"
+        android:layout_alignBottom="@+id/txt_add_sales_name"
+        android:layout_alignTop="@+id/txt_add_sales_name"
+        android:layout_toRightOf="@+id/txt_add_sales_name"
+        android:layout_alignRight="@+id/view_add_name"
+        android:layout_alignEnd="@+id/view_add_name" />
+
+    <View
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/view_add_name"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#d5d8dc"
+        android:layout_below="@+id/txt_add_sales_name"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp" />
+
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:text="Hours/Quote:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_add_sales_hours"
+        android:layout_below="@+id/view_add_name"/>
+
+    <EditText
+        android:layout_marginLeft="5dp"
+        android:id="@+id/edit_add_sales_hours"
+        android:textSize="10sp"
+        android:background="@android:color/transparent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="required"
+        android:layout_alignBottom="@+id/txt_add_sales_hours"
+        android:layout_toRightOf="@+id/txt_add_sales_hours"
+        android:layout_alignTop="@+id/txt_add_sales_hours"
+        android:layout_alignRight="@+id/edit_add_contract"
+        android:layout_alignEnd="@+id/edit_add_contract" />
+
+    <View
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/view_add_hours"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#d5d8dc"
+        android:layout_below="@+id/txt_add_sales_hours"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp" />
+
+
+    <TextView
+
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:text="Hours/Contract:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_hours_contract"
+        android:layout_below="@+id/view_add_hours"/>
+
+    <EditText
+        android:layout_marginLeft="12dp"
+        android:id="@+id/edit_add_contract"
+        android:textSize="10sp"
+        android:background="@android:color/transparent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="required"
+        android:layout_alignBottom="@+id/txt_hours_contract"
+        android:layout_toRightOf="@+id/txt_hours_contract"
+        android:layout_marginStart="12dp"
+        android:layout_alignTop="@+id/txt_hours_contract"
+        android:layout_alignRight="@+id/view_add_hours"
+        android:layout_alignEnd="@+id/view_add_hours" />
+
+    <View
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/view_add_contract"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#d5d8dc"
+        android:layout_below="@+id/txt_add_sales_hours"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp" />
+
+</RelativeLayout>

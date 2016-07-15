@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/image_camera"
+        android:src="@android:drawable/ic_menu_camera"/>
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/image_camera"
+        android:id="@+id/text_shared1"
+        android:text="Shared"
+        />
+
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/image_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_shared_forecast"
+        android:layout_below="@+id/text_shared1"
+        android:text="Forecast"/>
+
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_number_sub"
+        android:layout_toRightOf="@+id/image_camera"
+        android:layout_below="@+id/text_shared_forecast"
+        android:text="Number of Subreport:1"/>
+
+    <ImageView
+        android:layout_marginRight="10dp"
+        android:src="@drawable/icon_check_done_new"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/image_shared_tick"
+        android:layout_alignTop="@+id/text_shared_forecast"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <View
+        android:layout_below="@+id/text_number_sub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/view_shared_listview"
+        android:background="#d3d5d5"/>
+
+</RelativeLayout>
